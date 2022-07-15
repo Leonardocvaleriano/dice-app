@@ -1,6 +1,6 @@
 package com.example.diceroller
 
-import junit.framework.Assert.assertTrue
+import org.junit.Assert.assertTrue
 import org.junit.Test
 
 
@@ -11,10 +11,10 @@ import org.junit.Test
  */
 class ExampleUnitTest {
     @Test
-    fun generates_number() {
+    fun generate_number(){
         val dice = MainActivity.Dice(6)
         val rollResult = dice.roll()
-        assertTrue("The value of rollResult was not between 1 and 6", rollResult in 1..6 )
+        assertTrue("The rollResut wasn't between 1 and 6", rollResult in 1..6)
     }
 
  }
